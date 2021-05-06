@@ -98,6 +98,25 @@
                         <div id="disqus_thread">
                         <a href="#" class="comments-holder" onclick="loadDisqus();return false;">Show/Post Comments</a> 
                         </div>
+                        <script>
+ 
+    var disqus_shortname = "valentinecomic";
+    var disqus_config = function () {
+        this.page.url = 'https://valentinecomic.github.com/18.html';  
+        this.page.identifier = 'https://valentinecomic.github.com/18thml';
+    };
+    var is_disqus_loaded = false;
+    function loadDisqus() {  
+      if (!is_disqus_loaded){
+        is_disqus_loaded = true;
+        var d = document, s = d.createElement('script');        
+        s.src = '//' + disqus_shortname +'.disqus.com/embed.js';        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+        
+    };
+</script>
                         </div>      
                     </div>
                 </div>
