@@ -95,30 +95,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <script>
-/**
- * Disqus loader which verifies the existence of `#disqus_thread` on 
- * the web page and then prepares the disqus embed script to hook in 
- * the document
- */
-function load_disqus( disqus_shortname ) {
-  // Prepare the trigger and target
-  var disqus_trigger = jQuery('#disqus_trigger'),
-      disqus_target = jQuery('#disqus_thread');
-
-  // Load script asynchronously only when the trigger and target exist
-  if(disqus_target && disqus_trigger) {
-    jQuery.ajaxSetup({ cache:true });
-    jQuery.getScript('//' + disqus_shortname + '.disqus.com/embed.js');
-    jQuery.ajaxSetup({ cache:false });
-    disqus_trigger.remove();
-    console.log('Disqus loaded.');
-  }
-}
-</script>
-<div id="disqus_thread"></div>
-  <button id="diqus_loader" onclick="load_disqus('your_disqus_shortname')">Post a Comment</button>
-</div>
+                        <div id="disqus_thread"></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
