@@ -95,25 +95,32 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
+                        <div id="disqus_thread">
+                          <div class="container d-flex h-100 align-items-center">
+                            <div class="mx-auto text-center">
+                        <a href="#" class="comments-holder" onclick="loadDisqus();return false;">Show Comments</a>
+                        </div>
+                          </div>
+                        </div>
+                        <script>
+
+    var disqus_shortname = "valentinecomic";
     var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'https://valentinecomic.github.io/18.html';  
+        this.page.identifier = 'https://valentinecomic.github.io/18.html';
     };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://valentinecomic.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
+    var is_disqus_loaded = false;
+    function loadDisqus() {
+      if (!is_disqus_loaded){
+        is_disqus_loaded = true;
+        var d = document, s = d.createElement('script');
+        s.src = '//' + disqus_shortname +'.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+
+    };
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                         </div>      
                     </div>
                 </div>
