@@ -62,8 +62,4 @@
    $("img").mousedown(function(e){
      e.preventDefault()
    });
-
-   $("#searchresults img").mousedown(function(e){
-     e.preventDefault()
-   });
 })(jQuery); // End of use strict
