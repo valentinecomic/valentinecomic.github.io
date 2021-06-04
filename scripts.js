@@ -53,4 +53,17 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+       
+    //Disable dragging and right-clicking
+    $("body").on("contextmenu",function(e){
+     return false;
+   });
+
+   $("img").mousedown(function(e){
+     e.preventDefault()
+   });
+
+   $("#searchresults img").mousedown(function(e){
+     e.preventDefault()
+   });
 })(jQuery); // End of use strict
