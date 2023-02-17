@@ -106,5 +106,8 @@
    if (curr_month > birth_month) return parseInt(curr_year-birth_year);
    if (curr_month < birth_month) return parseInt(curr_year-birth_year-1);
    }
+   
+   var age = getAge('08/07/2006');
+   alert(age);
 
 })(jQuery); // End of use strict
