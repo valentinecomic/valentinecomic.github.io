@@ -93,13 +93,59 @@
                           <div class="d-flex h-100">
                               <div class="project-text w-100 my-auto text-center">
                                 <h4 class="text-black"><strong>Chapter 1 [ONGOING]</strong></h4>
-				     <label for="dog-names">Select a page:</label> 
-					    <select name="dog-names" id="dog-names"> 
-					        <option value="/chapter-1/1.html#projects">Page 1</option> 
-					        <option value="/chapter-2/2.html#projects">Page 2</option> 
-					        <option value="pumpernickel">Pumpernickel</option> 
-					        <option value="reeses">Reeses</option> 
-					    </select>
+				     <style> 
+				/* Dropdown Button */ 
+				.dropdown-button { 
+				    background-color: #0000b3; 
+				    color: white; 
+				    padding: 16px; 
+				    font-size: 16px; 
+				    border: none; 
+				} 
+				.dropdown { 
+				    position: relative; 
+				    display: inline-block; 
+				} 
+				/* Dropdown Content (Hidden by Default) */ 
+				.dropdown-list { 
+				    display: none; 
+				    position: absolute; 
+				    background-color: #f1f1f1; 
+				    min-width: 160px; 
+				    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+				    z-index: 1; 
+				} 
+				/* Links inside the dropdown */ 
+				.dropdown-list a { 
+				    color: black; 
+				    padding: 12px 16px; 
+				    text-decoration: none; 
+				    display: block; 
+				    font-family: verdana; 
+				} 
+				/* Change color of dropdown links on hover */ 
+				.dropdown-list a:hover { 
+				    background-color: #ddd; 
+				} 
+				/* Show the dropdown list on hover */ 
+				.dropdown:hover .dropdown-list { 
+				    display: block; 
+				} 
+				/* Change the background color of the dropdown button when the dropdown list is shown */ 
+				.dropdown:hover .dropdown-button { 
+				    background-color: #6666ff; 
+				} 
+				</style> 
+				</head> 
+				<body> 
+					<div class="dropdown"> 
+						<button class="dropdown-button">Select A Page</button> 
+						<div class="dropdown-list"> 
+							<a href="/chapter-1/1.html#projects">Page 1</a> 
+							<a href="#">This is Link 2</a> 
+							<a href="#">This is Link 3</a> 
+						</div> 
+					</div> 
 			 	  <ul class="navbar-nav ml-auto">
                                     <li class="nav-item"><a class="nav-link" href="/chapter-1/1.html#projects">Chapter 1 Cover</a></li>
                                     <li class="nav-item"><a class="nav-link" href="/chapter-1/2.html#projects">Page 2</a></li>
